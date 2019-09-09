@@ -97,6 +97,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* --------------- MOBILE FIRST -------------- */
 /* ----------------------- Base Header - Footer Styles ------------------- */
 header,
 footer {
@@ -104,6 +105,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 15px 0;
 }
 
    html
@@ -111,29 +113,35 @@ footer {
 .content-wrapper
 
 /* Header */
-
-header
+header {
+  padding: 15px 0;
+}
 
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
-header .header-divider
+header .header-divider {
+  width: 100%;
+}
 
 header nav {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-header ul {
-  display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 45%;
 }
 
 /* Main - Home */
@@ -167,11 +175,12 @@ aside .form-description
 
 .fontawesome-icon
 
-.features-item-description {
+.features article {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 55%;
 }
 
 .reviews {
@@ -179,6 +188,10 @@ aside .form-description
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.reviews h3 {
+  width: 50%;
 }
 
 .reviews .content-wrapper
@@ -225,6 +238,8 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 55%;
+  margin: 50px 0;
 }
 
 footer .contact {
